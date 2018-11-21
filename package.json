@@ -1,0 +1,26 @@
+{
+  "name": "demo1",
+  "version": "0.0.1",
+  "description": "Node.js demo app",
+  "main": "server.js",
+  "dependencies": {
+    "express": ".*"
+  },
+  "engine": {
+    "node": "*",
+    "npm": "*"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gjovik-win/demo1.git"
+  },
+  "author": "Gjovik Win <gjovik.win@gmail.com>",
+  "license": "Apache",
+  "bugs": {
+    "url": "https://github.com/gjovik-win/demo/issues"
+  },
+  "homepage": "https://github.com/gjovik-win/demo"
+}
