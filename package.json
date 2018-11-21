@@ -1,6 +1,6 @@
 {
   "name": "demo1",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Node.js demo app",
   "main": "server.js",
   "dependencies": {
