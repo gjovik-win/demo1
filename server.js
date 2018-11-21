@@ -29,12 +29,12 @@ app.listen(port, () => console.log(`Demo app listening on port ${port}!`))
 const healthApp = express()
 healthApp.put('/getready', (req, res) => {
   readyCode = 200
-  res.status(httpCode).send(`${getTs()}: ${application} in pod ${hostname} - I'm ready!!`)
+  res.send(`${getTs()}: ${application} in pod ${hostname} - I'm ready!!`)
 })
 
 healthApp.put('/backoff', (req, res) => {
   readyCode = 503
-  res.status(httpCode).send(`${getTs()}: ${application} in pod ${hostname} - I'm not talking to you!!`)
+  res.send(`${getTs()}: ${application} in pod ${hostname} - I'm not talking to you!!`)
 })
 
 healthApp.get('/ready', (req, res) => { res.status(readyCode).send(readyCode==200?`Jepp. Jeg er klar!!`:"Glem det!") })
